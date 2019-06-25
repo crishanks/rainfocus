@@ -1,17 +1,38 @@
+$opaque: rgb(226,226,226, 0.4)
+  
 *
   padding: 0px
   margin: 0px
 
+.material-icons
+  color: white
+
+.opaque
+  opacity: 0.8
+
+.logo
+  color: white
+  width: 22px
+
 body
   height: 100vh
   display: grid
-  grid-auto-columns: 10% 20% 45%
-  grid-template-rows: 40% 1fr
-  background-color: #FFCC00
+  grid-template-columns: 60px 1fr
+  grid-template-rows: 100%
+  background-color: $opaque
 
-  
 #nav-container
   grid-column: 1
-  grid-row: 1/3
-  width: 10%
+  grid-row: 1
   background-image: linear-gradient(#db3353, #8a297a)
+  box-shadow: 2px 0px 2px #888888
+  
+
+#nav-top-container
+  height: 20%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-around
+  padding: 25% 0 25% 0
+  border-bottom: 1px solid $opaque
