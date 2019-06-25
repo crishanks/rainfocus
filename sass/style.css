@@ -68,7 +68,7 @@ body {
   width: 40%;
   height: 45%;
   margin: 15px 25px;
-  font-family: "Muli", sans-serif;
+  font-family: "Lato", sans-serif;
   border-radius: 5px;
   background-color: white;
   box-shadow: 2px 2px 2px #e2e2e2;
@@ -81,13 +81,15 @@ body {
 
 .header {
   grid-row: 1;
-  grid-column: 2;
+  grid-column: 1/4;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 5%;
+  border-bottom: 2px solid rgba(226, 226, 226, 0.8);
 }
 .header h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: light;
   font-size: 22px;
 }
@@ -97,12 +99,10 @@ body {
 
 .body {
   grid-row: 2;
-  grid-column: 1/4;
+  grid-column: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0 5%;
-  border-top: 2px solid rgba(226, 226, 226, 0.8);
 }
 .body span {
   font-weight: lighter;
