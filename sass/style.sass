@@ -1,8 +1,16 @@
+// Variables
 $opaque: rgb(226,226,226, 0.4)
-  
+$header-font: 'Roboto', sans-serif
+$body-font: 'Muli', sans-serif
+$page-icon-color: #959595
+
+// Global Styles
+
 *
   padding: 0px
   margin: 0px
+  
+// Icons
 
 .material-icons, .fas
   color: white
@@ -12,13 +20,16 @@ $opaque: rgb(226,226,226, 0.4)
 
 .logo
   fill: white
-  width: 22px
+  width: 20px
 
+// Body
 body
   height: 100vh
   display: grid
   grid-template-columns: 60px 1fr
   background-color: $opaque
+
+// Navbar
 
 #nav-container
   grid-column: 1
@@ -52,3 +63,64 @@ body
   align-items: center
   justify-content: center
   border-top: 1px solid $opaque
+
+// Main Page
+
+#badge-output-container
+  display: grid
+  grid-template-rows: 20% 1fr 20%
+  grid-template-columns: 5% 1fr 5%
+  grid-row-gap: 10px
+  width: 40%
+  height: 45%
+  margin: 15px 25px
+  font-family: $body-font
+  border-radius: 5px
+  background-color: white
+  box-shadow: 2px 2px 2px #e2e2e2
+  p
+    list-style: none
+    font-weight: bold
+    font-size: 12px
+
+.header
+  grid-row: 1
+  grid-column: 2
+  display: flex
+  align-items: center
+  justify-content: space-between
+  h1
+    font-family: $header-font
+    font-weight: light
+    font-size: 22px
+  i
+    color: $page-icon-color
+
+.body
+  grid-row: 2
+  grid-column: 1/4
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  padding: 0 5%
+  border-top: 2px solid rgb(226,226,226, 0.8)
+  span
+    font-weight: lighter
+    opacity: 0.5
+
+.section-footer
+  grid-row: 3
+  grid-column: 2
+  display: flex
+  align-items: center
+  justify-content: space-between
+  span
+    font-weight: lighter
+    opacity: 0.5
+  div
+    width: 20%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    i
+      color: $page-icon-color
