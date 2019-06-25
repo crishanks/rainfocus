@@ -8,7 +8,7 @@ $opaque: rgb(226,226,226, 0.4)
   color: white
 
 .opaque
-  opacity: 0.8
+  opacity: 0.6
 
 .logo
   color: white
@@ -24,7 +24,7 @@ body
   grid-column: 1
   grid-row: 1
   display: grid
-  grid-template-rows: 20% 1fr 5%
+  grid-template-rows: 20% 55% 1fr 4%
   background-image: linear-gradient(#db3353, #8a297a)
   box-shadow: 2px 0px 2px #888888
 
@@ -34,6 +34,8 @@ body
   flex-direction: column
   align-items: center
   justify-content: space-around
+  padding: 10px
+  border-bottom: 1px solid $opaque
 
 #nav-middle-container
   grid-row: 2
@@ -41,12 +43,12 @@ body
   flex-direction: column
   align-items: center
   justify-content: space-around
-  border-bottom: 1px solid $opaque
-  border-top: 1px solid $opaque
+  padding-top: 10px
 
 #nav-bottom-container
-  grid-row: 3
+  grid-row: 4
   display: flex
   flex-direction: column
   align-items: center
   justify-content: center
+  border-top: 1px solid $opaque
