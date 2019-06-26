@@ -110,6 +110,7 @@ body
     display: flex
     flex-direction: column
     justify-content: space-around
+    overflow: auto
     span
       font-weight: lighter
       opacity: 0.5
@@ -156,21 +157,33 @@ body
       opacity: 0.5
       padding-top: 5px
   .body
+    min-height: 100%
     grid-row: 2
-    grid-column: 2/5
-    display: grid
-    grid-template-columns: 13% 2% 1fr 5%
-    .calendar-info
-      grid-column: 3
-    .pike
-      grid-column: 2
-      display: flex
-      justify-content: flex-start
-      color: #ef291e
-    .calendar-time
-      grid-column: 1
-    .find-sessions
-      color: $font-highlight-color
+    grid-column: 1/5
+    display: flex
+    flex-direction: column
+    overflow: auto
+    .row
+      flex: 1
+      display: grid
+      grid-template-columns: 5% 13% 2% 1fr 5%
+      grid-row-gap: 5px
+      padding-bottom: 2.5%
+      .calendar-info
+        grid-column: 4
+      .pike
+        grid-column: 3
+        display: flex
+        justify-content: flex-start
+        color: #ef291e
+      .calendar-time
+        grid-column: 2
+      .find-sessions
+        color: $font-highlight-color
+    .row:not(:first-child)
+      border-top: 1px solid rgb(226,226,226, 0.8)
+      justify-self: center
+      padding-top: 2.5%
     h3
       font-size: 12px
       font-weight: 900
