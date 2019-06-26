@@ -178,7 +178,7 @@ body {
 #calendar-container .body .row {
   flex: 1;
   display: grid;
-  grid-template-columns: 5% 13% 2% 1fr 5%;
+  grid-template-columns: 5% 13% 2% 1fr 12%;
   grid-row-gap: 5px;
   padding-bottom: 2.5%;
 }
@@ -193,6 +193,16 @@ body {
 }
 #calendar-container .body .row .calendar-time {
   grid-column: 2;
+}
+#calendar-container .body .row .calendar-icon-container {
+  grid-column: 5;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  margin-right: 20%;
+}
+#calendar-container .body .row .calendar-icon-container i {
+  color: #7d356b;
 }
 #calendar-container .body .row .find-sessions {
   color: #7d356b;

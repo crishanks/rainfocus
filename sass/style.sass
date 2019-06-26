@@ -76,6 +76,8 @@ body
   grid-gap: 20px
   margin-top: 15px
 
+// Badge Output Box
+
 #badge-output-container
   grid-row: 1
   grid-column: 1
@@ -131,6 +133,8 @@ body
       i
         color: $page-icon-color
 
+// Calendar Box
+
 #calendar-container
   grid-row: 1
   grid-column: 2
@@ -166,7 +170,7 @@ body
     .row
       flex: 1
       display: grid
-      grid-template-columns: 5% 13% 2% 1fr 5%
+      grid-template-columns: 5% 13% 2% 1fr 12%
       grid-row-gap: 5px
       padding-bottom: 2.5%
       .calendar-info
@@ -178,6 +182,14 @@ body
         color: #ef291e
       .calendar-time
         grid-column: 2
+      .calendar-icon-container
+        grid-column: 5
+        justify-content: space-around
+        align-items: center
+        display: flex
+        margin-right: 20%
+        i
+          color: $font-highlight-color
       .find-sessions
         color: $font-highlight-color
     .row:not(:first-child)
@@ -190,4 +202,6 @@ body
     p 
       font-size: 12px
       
+// File Box
+
 
