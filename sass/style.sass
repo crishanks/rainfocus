@@ -3,6 +3,8 @@ $opaque: rgb(226,226,226, 0.4)
 $main-page-font: 'Lato', sans-serif
 $page-icon-color: #959595
 $highlight-color: rgba(125, 53, 107)
+$box-shadow: 2px 2px 2px #e2e2e2
+$header-border: 2px solid rgb(226,226,226, 0.8)
 
 // Global Styles
 
@@ -118,7 +120,7 @@ body
   margin-left: 20px
   border-radius: 5px
   background-color: white
-  box-shadow: 2px 2px 2px #e2e2e2
+  box-shadow: $box-shadow
   p
     list-style: none
     font-weight: bold
@@ -130,7 +132,7 @@ body
     align-items: center
     justify-content: space-between
     padding: 0 5%
-    border-bottom: 2px solid rgb(226,226,226, 0.8)
+    border-bottom: $header-border
     h1
       font-weight: light
       font-size: 22px
@@ -175,7 +177,7 @@ body
   background-color: white
   border-radius: 5px
   margin-right: 20px
-  box-shadow: 2px 2px 2px #e2e2e2
+  box-shadow: $box-shadow
   overflow: auto
   .header
     grid-row: 1
@@ -183,7 +185,7 @@ body
     display: flex
     align-items: center
     padding: 0 5%
-    border-bottom: 2px solid rgb(226,226,226, 0.8)
+    border-bottom: $header-border
     overflow: auto
     h1 
       font-size: 22px
@@ -245,7 +247,7 @@ body
   background-color: white
   border-radius: 5px
   margin: 0 20px 0 20px
-  box-shadow: 2px 2px 2px #e2e2e2
+  box-shadow: $box-shadow
   overflow: auto
   i 
     color: $highlight-color
@@ -326,4 +328,4 @@ body
       .session-status
         grid-column: 8
     .files-row:not(:first-child)
-      border-top: 2px solid rgb(226,226,226, 0.8)
+      border-top: $header-border
