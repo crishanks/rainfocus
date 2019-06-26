@@ -75,7 +75,7 @@ body
   grid-template-rows: 45% 1fr
   grid-template-columns: 40% 1fr
   grid-gap: 20px
-  margin-top: 15px
+  margin: 15px 0 15px
 
 // Badge Output Box
 
@@ -215,19 +215,21 @@ body
   border-radius: 5px
   margin: 0 20px 0 20px
   box-shadow: 2px 2px 2px #e2e2e2
+  i 
+    color: $highlight-color
+  h2 
+    font-size: 10px
+    font-family: $main-page-font
+    color: $highlight-color
+  p
+    font-size: 10px
+    font-family: $main-page-font
   .header
     grid-row: 1
     grid-column: 1/10
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: space-between
-    padding: 0 5%
+    display: grid
+    grid-template-columns: 5% 15% 15% 15% 15% 15% 15% 5%
     border-bottom: 2px solid $highlight-color
-    h2 
-      font-size: 10px
-      font-family: $main-page-font
-      color: $highlight-color
   .body
     grid-row: 2
     display: flex
@@ -235,5 +237,23 @@ body
     grid-column: 1/10
     .files-row
       flex: 1
+      display: grid
+      grid-template-columns: 5% 15% 15% 15% 15% 15% 15% 5%
+      .material-icons
+        grid-column: 1
+      .file-name
+        grid-column: 2
+      .file-type
+        grid-column: 3
+      .file-create-date
+        grid-column: 4
+      .published-status
+        grid-column: 5
+      .session-name
+        grid-column: 6
+      .session-code
+        grid-column: 7
+      .session-status
+        grid-column: 8
     .files-row:not(:first-child)
       border-top: 2px solid rgb(226,226,226, 0.8)
