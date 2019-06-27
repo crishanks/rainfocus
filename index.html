@@ -19,6 +19,11 @@
   <!-- Lato -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
 
+  <!-- Bootstrap/JQUERY -->
+  <link rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css"/>
+  <script src="http://getbootstrap.com/2.3.2/assets/js/jquery.js"></script>
+  <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap.js"></script>
+
   <title>RainFocus UI - CRIS/HANKS</title>
 </head>
 <body>
@@ -54,7 +59,8 @@
     <div id="badge-output-container">
       <div class="header">
         <h1>Badge Output</h1>
-        <i class="fas fa-pen"></i>
+        <!-- Modal Trigger -->
+        <i class="fas fa-pen" data-toggle="modal" data-target="#myModal"></i>
       </div>
       <div class="body">
         <p>First Name: <span>Alison</span></p>
@@ -236,5 +242,24 @@
       </div>
     </div>
   </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Badge Output Modal</h4>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
